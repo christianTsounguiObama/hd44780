@@ -13,7 +13,7 @@ dht11_ws/ ├── include/ # Fichiers d'en-tête (headers)</br>
           │ └── main.c </br>
 		  ├── build/ # Fichiers compilés </br>
 		  └── Makefile # Système de compilation </br>
-    		  ├── Schemas/ # Schemas de connections
+    		  ├── Schemas/ # Schemas de connections </br>
 		  └── HD44780_Schematics
 
 ## Fonctionnalités
