@@ -1,6 +1,6 @@
-# Interface UART du DHT11 avec l’ATmega2560 (C Bare-Metal)
+# Affichage de texte sur un écran LCD HD44780 1602 via protocole parallèle en C bas-niveau sur ATmega2560
 
-Un projet en langage C bare-metal pour interfacer un **capteur de température et d’humidité DHT11** avec un **ATmega2560 (Arduino Mega)** et envoyer les mesures via **UART**.
+Ce projet implémente, en langage C bare-metal, une interface directe entre un microcontrôleur ATmega2560 (Arduino Mega) et un capteur de température et d’humidité DHT11, sans utiliser de bibliothèques externes. Les données mesurées sont ensuite transmises via le protocole UART à un terminal série ou un autre périphérique. L’objectif est de comprendre le protocole de communication 1-Wire spécifique au DHT11, de le mettre en œuvre via des manipulations de registres, et de configurer l’UART pour envoyer les données en ASCII.
 
 ## Structure du projet
 dht11_ws/ ├── include/ # Fichiers d'en-tête (headers)</br>
@@ -19,15 +19,15 @@ dht11_ws/ ├── include/ # Fichiers d'en-tête (headers)</br>
 
 ## Fonctionnalités
 
-- **Implémentation du protocole 1-wire** pour la communication avec le capteur DHT11
-- Lecture de la température et de l’humidité à partir du capteur DHT11
-- Transmission des données via UART (9600 bauds)
-- Code entièrement registres (sans bibliothèques Arduino)
-- Structure modulaire des pilotes
+- Initialisation manuelle de l’écran selon le protocole HD44780.
+- Affichage de messages texte sur deux lignes.
+- Implémentation de l’envoi de données/commandes via un bus parallèle 4 bits.
+- Gestion de l'affichage ligne par ligne (avec saut automatique à la ligne 2 après 16 caractères).
+- Codé entièrement sans bibliothèques Arduino.
 
 ## Prérequis
 
-- **Matériel** : Arduino Mega 2560, capteur DHT11
+- **Matériel** : Arduino Mega 2560, Ecran LCD HD44780 16x2
 - **Outils** :
   - `avr-gcc`
   - `avrdude`
@@ -38,8 +38,8 @@ dht11_ws/ ├── include/ # Fichiers d'en-tête (headers)</br>
 ### 1. Cloner le dépôt
 
 ```bash
-git clone https://github.com/christianTsounguiObama/dht11UART.git
-cd dht11UART/dht11_ws
+git clone https://github.com/christianTsounguiObama/hd44780.git
+cd hd44780/hd44780_ws
 ```
 
 ### 2. Compiler le projet
@@ -60,7 +60,7 @@ screen /dev/ttyUSB0 9600
 ```
 
 ## Licence
-Ce projet est open source et disponible sous la Licence MIT.
+Ce projet est open source et disponible sous la Licence Apache 2.0.
 
 ### Contribuer
 Les contributions sont les bienvenues. Si vous trouvez des problèmes, n’hésitez pas à ouvrir une issue ou à proposer des améliorations.
