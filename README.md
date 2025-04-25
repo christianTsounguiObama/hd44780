@@ -11,8 +11,10 @@ dht11_ws/ ├── include/ # Fichiers d'en-tête (headers)</br>
 		  │ └── gpio/gpio.c</br>
 		  ├── main/ # Logique principale de l’application </br>
           │ └── main.c </br>
-		  ├── build/ # Fichiers compilés (ignorés par Git) </br>
-		  ├── Makefile # Système de compilation </br>
+		  ├── build/ # Fichiers compilés </br>
+		  └── Makefile # Système de compilation </br>
+    		  ├── Schemas/ # Schemas de connections
+		  └── HD44780_Schematics
 
 ## Fonctionnalités
 
