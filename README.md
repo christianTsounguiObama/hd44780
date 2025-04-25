@@ -13,7 +13,6 @@ dht11_ws/ ├── include/ # Fichiers d'en-tête (headers)</br>
           │ └── main.c </br>
 		  ├── build/ # Fichiers compilés (ignorés par Git) </br>
 		  ├── Makefile # Système de compilation </br>
-		  └── .gitignore</br>
 
 ## Fonctionnalités
 
