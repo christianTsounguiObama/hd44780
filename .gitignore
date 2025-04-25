@@ -1,0 +1,28 @@
+# Build output
+build/
+*.o
+*.elf
+*.hex
+*.map
+*.lst
+*.bin
+
+# Editor/IDE specific
+*.swp
+*.swo
+*.swn
+*.bak
+*.tmp
+*~
+
+# VSCode settings
+.vscode/
+
+# CLion / JetBrains IDEs
+.idea/
+
+# MacOS system files
+.DS_Store
+
+# Other temp files
+*.log
