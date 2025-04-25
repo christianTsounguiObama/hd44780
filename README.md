@@ -4,12 +4,10 @@ Ce projet implémente, en langage C bare-metal, une interface directe entre un m
 
 ## Structure du projet
 dht11_ws/ ├── include/ # Fichiers d'en-tête (headers)</br>
-		  │ ├── dht11.h </br>
-	      │ ├── uart.h </br>
+		  │ ├── hd44780.h </br>
 		  │ └── gpio.h </br>
           ├── drivers/ # Fichiers source pour les pilotes bas-niveau </br>
-          │ ├── dht11/dht11.c </br>
-	      │ ├── uart/uart.c</br>
+          │ ├── hd44780/hd44780.c </br>
 		  │ └── gpio/gpio.c</br>
 		  ├── main/ # Logique principale de l’application </br>
           │ └── main.c </br>
