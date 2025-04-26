@@ -32,6 +32,10 @@ dht11_ws/ ├── include/ # Fichiers d'en-tête (headers)</br>
   - `avrdude`
 - **Système** : Linux (testé sous Ubuntu 20.04+)
 
+## Schema
+![Schema](https://github.com/user-attachments/assets/6e28fa02-f21e-44d2-bc99-86c8fb1de44c)
+
+
 ## Démarrage rapide
 
 ### 1. Cloner le dépôt
