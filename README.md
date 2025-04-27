@@ -44,19 +44,13 @@ dht11_ws/ ├── include/ # Fichiers d'en-tête (headers)</br>
 git clone https://github.com/christianTsounguiObama/hd44780.git
 cd hd44780/hd44780_ws
 ```
-
-### 2. Compiler le projet
-```bash
-make
-```
-
-### 3. Flasher le fichier binaire
+### 2. Flasher le fichier binaire
 Assurez-vous que votre carte Arduino Mega2560 est connectée via USB et ajustez PORT dans le Makefile si nécessaire.
 ```bash
 make
 ```
 
-### 4. Lire les données sur le port série
+### 3. Lire les données sur le port série
 Utilisez un outil comme screen :
 ```bash
 screen /dev/ttyUSB0 9600
