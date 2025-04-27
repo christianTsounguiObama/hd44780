@@ -51,9 +51,9 @@ make
 ```
 
 ### 3. Flasher le fichier binaire
-Assurez-vous que votre carte est connectée via USB et ajustez PORT dans le Makefile si nécessaire.
+Assurez-vous que votre carte Arduino Mega2560 est connectée via USB et ajustez PORT dans le Makefile si nécessaire.
 ```bash
-make flash
+make
 ```
 
 ### 4. Lire les données sur le port série
